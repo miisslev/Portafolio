@@ -1,14 +1,13 @@
-﻿/* --- FUENTE PIXEL ART DE GOOGLE FONTS --- */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --bg-pink: #ffe6ee; /* Fondo rosa pastel muy suave */
-    --card-pink: #fff0f5; /* Fondo de tarjetas rosa lavanda suave */
-    --header-pink: #fbcfe8; /* Rosa pastel para encabezados */
-    --border-pink: #db2777; /* Rosa oscuro para bordes pixelados */
-    --accent-pink: #f472b6; /* Rosa vibrante para botones */
-    --accent-hover: #e11d48; /* Rosa/rojo al pasar el cursor */
-    --text-dark: #4a0e17; /* Texto vino/marrón oscuro */
+    --bg-pink: #ffe6ee; 
+    --card-pink: #fff0f5; 
+    --header-pink: #fbcfe8; 
+    --border-pink: #db2777; 
+    --accent-pink: #f472b6; 
+    --accent-hover: #e11d48; 
+    --text-dark: #4a0e17; 
     --pixel-shadow: 4px 4px 0px var(--border-pink);
     --pixel-shadow-lg: 6px 6px 0px var(--border-pink);
 }
@@ -17,8 +16,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Press Start 2P', monospace; /* Fuente retro pixel */
-    image-rendering: pixelated; /* Mantener imágenes nítidas */
+    font-family: 'Press Start 2P', monospace; /
+    image-rendering: pixelated; 
 }
 
 html {
@@ -31,7 +30,7 @@ body {
     line-height: 1.8;
 }
 
-/* --- BARRA DE NAVEGACIÓN PIXEL ART --- */
+/* --- barra de navegacion pixel art --- */
 nav {
     position: sticky;
     top: 0;
@@ -67,7 +66,7 @@ nav {
             box-shadow: 5px 5px 0px var(--border-pink);
         }
 
-/* --- ENCABEZADO / HERO --- */
+/* ---encabezado--- */
 header {
     text-align: center;
     padding: 3rem 1rem;
@@ -90,7 +89,7 @@ header {
         color: var(--text-dark);
     }
 
-/* --- SECCIONES GENERALES --- */
+/* --- secciones generales --- */
 section {
     max-width: 900px;
     margin: 3rem auto;
@@ -108,7 +107,7 @@ h2 {
     text-transform: uppercase;
 }
 
-/* --- SECCIÓN SOBRE MÍ Y PROYECTOS (VERTICAL PIXEL) --- */
+/* --- sobre mi y proyectos --- */
 .contenedor-proyectos {
     display: flex;
     flex-direction: column;
@@ -153,7 +152,7 @@ h2 {
     border: 4px dashed var(--border-pink);
 }
 
-/* --- SECCIÓN HABILIDADES (EN CUADRÍCULA PIXEL) --- */
+/* --- habilidades --- */
 .contenedor-habilidades {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -195,7 +194,7 @@ h2 {
             color: #ffffff;
         }
 
-/* --- CONTACTO DIRECTO PIXEL ART --- */
+/* --- contacto --- */
 .subtitulo-contacto {
     text-align: center;
     font-size: 0.65rem;
@@ -255,7 +254,7 @@ h2 {
         color: #ffffff;
     } 
 
-/* --- FOOTER --- */
+/* --- footer --- */
 footer {
     text-align: center;
     padding: 2rem;
@@ -284,7 +283,7 @@ footer {
             color: #ffffff;
         }
 
-/* --- PÉTALOS DE CEREZO EN PIXEL ART --- */
+/* --- petalos en pixel art --- */
 .petalo-sakura {
     position: fixed;
     top: -20px;
