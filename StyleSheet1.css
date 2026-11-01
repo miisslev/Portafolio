@@ -1,0 +1,313 @@
+﻿/* --- FUENTE PIXEL ART DE GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --bg-pink: #ffe6ee; /* Fondo rosa pastel muy suave */
+    --card-pink: #fff0f5; /* Fondo de tarjetas rosa lavanda suave */
+    --header-pink: #fbcfe8; /* Rosa pastel para encabezados */
+    --border-pink: #db2777; /* Rosa oscuro para bordes pixelados */
+    --accent-pink: #f472b6; /* Rosa vibrante para botones */
+    --accent-hover: #e11d48; /* Rosa/rojo al pasar el cursor */
+    --text-dark: #4a0e17; /* Texto vino/marrón oscuro */
+    --pixel-shadow: 4px 4px 0px var(--border-pink);
+    --pixel-shadow-lg: 6px 6px 0px var(--border-pink);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', monospace; /* Fuente retro pixel */
+    image-rendering: pixelated; /* Mantener imágenes nítidas */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-pink);
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* --- BARRA DE NAVEGACIÓN PIXEL ART --- */
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--header-pink);
+    z-index: 1000;
+    border-bottom: 4px solid var(--border-pink);
+    padding: 1rem 0;
+}
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-size: 0.75rem;
+        background: var(--card-pink);
+        padding: 0.6rem 1rem;
+        border: 3px solid var(--border-pink);
+        box-shadow: 3px 3px 0px var(--border-pink);
+        transition: all 0.1s ease;
+    }
+
+        nav a:hover {
+            background: var(--accent-pink);
+            color: #ffffff;
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0px var(--border-pink);
+        }
+
+/* --- ENCABEZADO / HERO --- */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #fdf2f8;
+    border: 4px solid var(--border-pink);
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: var(--pixel-shadow-lg);
+}
+
+    header h1 {
+        font-size: 1.5rem;
+        color: var(--border-pink);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 0px #fbcfe8;
+    }
+
+    header p {
+        font-size: 0.75rem;
+        color: var(--text-dark);
+    }
+
+/* --- SECCIONES GENERALES --- */
+section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: var(--card-pink);
+    border: 4px solid var(--border-pink);
+    box-shadow: var(--pixel-shadow-lg);
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--border-pink);
+    text-transform: uppercase;
+}
+
+/* --- SECCIÓN SOBRE MÍ Y PROYECTOS (VERTICAL PIXEL) --- */
+.contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.tarjeta-proyecto {
+    background: #ffffff;
+    border: 4px solid var(--border-pink);
+    box-shadow: var(--pixel-shadow);
+    padding: 1rem;
+    transition: transform 0.1s ease;
+}
+
+    .tarjeta-proyecto:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 7px 7px 0px var(--border-pink);
+    }
+
+    .tarjeta-proyecto img {
+    width: 100%;
+    height: auto;           
+    object-fit: contain;     
+    display: block;
+    border: 3px solid var(--border-pink);
+    margin-bottom: 1rem;
+}
+
+.info-proyecto h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    color: var(--border-pink);
+}
+
+.info-proyecto p {
+    font-size: 0.65rem;
+    line-height: 1.8;
+}
+
+.logro-destacado {
+    background: #fdf2f8;
+    border: 4px dashed var(--border-pink);
+}
+
+/* --- SECCIÓN HABILIDADES (EN CUADRÍCULA PIXEL) --- */
+.contenedor-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.categoria-habilidad {
+    background: #ffffff;
+    padding: 1.5rem;
+    border: 4px solid var(--border-pink);
+    box-shadow: var(--pixel-shadow);
+    text-align: center;
+}
+
+    .categoria-habilidad h3 {
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+        color: var(--border-pink);
+    }
+
+    .categoria-habilidad ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .categoria-habilidad li {
+        background: var(--header-pink);
+        border: 2px solid var(--border-pink);
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        box-shadow: 2px 2px 0px var(--border-pink);
+    }
+
+        .categoria-habilidad li:hover {
+            background: var(--accent-pink);
+            color: #ffffff;
+        }
+
+/* --- CONTACTO DIRECTO PIXEL ART --- */
+.subtitulo-contacto {
+    text-align: center;
+    font-size: 0.65rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.contenedor-contacto-directo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tarjeta-contacto {
+    background: #ffffff;
+    border: 4px solid var(--border-pink);
+    box-shadow: var(--pixel-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 350px;
+    transition: transform 0.1s ease;
+}
+
+    .tarjeta-contacto:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 7px 7px 0px var(--border-pink);
+    }
+
+.icono-contacto {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-contacto h3 {
+    font-size: 0.75rem;
+    color: var(--border-pink);
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta-contacto a {
+    font-size: 0.65rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    background: var(--header-pink);
+    padding: 0.4rem 0.6rem;
+    border: 2px solid var(--border-pink);
+    display: inline-block;
+    word-break: break-all;
+    box-shadow: 2px 2px 0px var(--border-pink);
+}
+
+    .tarjeta-contacto a:hover {
+        background: var(--accent-pink);
+        color: #ffffff;
+    } 
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--header-pink);
+    border-top: 4px solid var(--border-pink);
+    margin-top: 3rem;
+    font-size: 0.65rem;
+}
+
+.enlaces-footer {
+    margin-bottom: 1rem;
+}
+
+    .enlaces-footer a {
+        color: var(--border-pink);
+        text-decoration: none;
+        margin: 0 0.5rem;
+        background: #ffffff;
+        padding: 0.3rem 0.6rem;
+        border: 2px solid var(--border-pink);
+        box-shadow: 2px 2px 0px var(--border-pink);
+    }
+
+        .enlaces-footer a:hover {
+            background: var(--accent-pink);
+            color: #ffffff;
+        }
+
+/* --- PÉTALOS DE CEREZO EN PIXEL ART --- */
+.petalo-sakura {
+    position: fixed;
+    top: -20px;
+    background: #f472b6;
+    border: 1px solid var(--border-pink);
+    box-shadow: 2px 2px 0px #db2777;
+    pointer-events: none;
+    z-index: 9999;
+    animation: caer linear infinite;
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(0) rotate(0deg) translateX(0);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(50vh) rotate(180deg) translateX(40px);
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg) translateX(-20px);
+        opacity: 0.3;
+    }
+}
